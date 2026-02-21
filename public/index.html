@@ -26,7 +26,7 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background: url('/bg.png') center center / cover fixed;
+
       background-color: #0e0e0e;
       color: var(--text);
       font-family: var(--sans);
@@ -213,6 +213,14 @@
       #toast { left: auto; right: 24px; bottom: 24px; transform: translateY(8px); width: auto; }
       #toast.show { transform: translateY(0); }
     }
+
+    .bg-loki{
+  position: absolute;
+  width: 100%;  
+  object-fit: fill;      /* fill entire screen */
+  background-position: center;  /* center image */
+  opacity: 30%;
+}
   </style>
 </head>
 <body>
@@ -227,7 +235,7 @@
     <button class="btn btn-ghost" id="logout-btn" style="display:none;font-size:11px;">Logout</button>
   </div>
 </header>
-
+<img class="bg-loki" src="/bg.png">
 <div id="auth-gate">
   <div class="auth-box">
     <h2>Access Required</h2>
